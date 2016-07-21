@@ -58,7 +58,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>if not exist $(TargetDir)\BIProviders md $(TargetDir)\BIProviders
+    <PostBuildEvent>if not exist $(TargetDir)BIProviders md $(TargetDir)BIProviders
 copy $(SolutionDir)\DundasProvider\bin\$(ConfigurationName)\DundasProvider.dll $(TargetDir)\BIProviders\DundasProvider.dll
 copy $(SolutionDir)\PowerBIProvider\bin\$(ConfigurationName)\PowerBIProvider.dll $(TargetDir)\BIProviders\PowerBIProvider.dll</PostBuildEvent>
   </PropertyGroup>
